@@ -1,0 +1,203 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="CheapSharkApp.MainPage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CheapSharkApp"
+    xmlns:common="using:CheapSharkApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" NavigationCacheMode="Enabled">
+
+    <Page.Resources>
+        <!-- Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">CheapShark</x:String>
+    </Page.Resources>
+
+    <Grid Width="Auto" Background="#FF0E64A3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="137*"/>
+            <RowDefinition Height="631*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer x:Name="MainScrollBar" Width="Auto" HorizontalScrollMode="Enabled" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Disabled" VerticalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" ZoomMode="Disabled" Background="#FF0E64A3" RenderTransformOrigin="0,0" Margin="0,135,0,2" Grid.RowSpan="2" HorizontalContentAlignment="Stretch">
+            <Viewbox Width="Auto">
+                <Grid Width="2700" Background="#FF0E64A3" Height="657">
+                    <!-- Steam -->
+                    <Rectangle Fill="#2F2E34"  HorizontalAlignment="Left" Height="47" Margin="209,49,0,0" Stroke="#2F2E34" VerticalAlignment="Top" Width="240"/>
+
+                    <!-- GamersGate -->
+                    <Rectangle Fill="#2F2E34" HorizontalAlignment="Left" Height="47" Margin="468,49,0,0" Stroke="#2F2E34" VerticalAlignment="Top" Width="240"/>
+
+                    <!-- GreenManGaming -->
+                    <Rectangle Fill="#2F2E34" HorizontalAlignment="Left" Height="47" Margin="727,49,0,0" Stroke="#2F2E34" VerticalAlignment="Top" Width="240"/>
+
+                    <!-- Amazon -->
+                    <Rectangle Fill="#2F2E34" HorizontalAlignment="Left" Height="47" Margin="986,49,0,0" Stroke="#2F2E34" VerticalAlignment="Top" Width="240"/>
+
+                    <!-- GameStop -->
+                    <Rectangle Fill="#2F2E34" HorizontalAlignment="Left" Height="47" Margin="1245,49,0,0" Stroke="#2F2E34" VerticalAlignment="Top" Width="240"/>
+
+                    <!-- GameFly -->
+                    <Rectangle Fill="#2F2E34" HorizontalAlignment="Left" Height="47" Margin="1504,49,0,0" Stroke="#2F2E34" VerticalAlignment="Top" Width="242"/>
+
+                    <!-- GOG -->
+                    <Rectangle Fill="#2F2E34" HorizontalAlignment="Left" Height="47" Margin="1763,49,0,0" Stroke="#2F2E34" VerticalAlignment="Top" Width="240"/>
+
+                    <!-- Origin -->
+                    <Rectangle Fill="#2F2E34" HorizontalAlignment="Left" Height="47" Margin="2022,49,0,0" Stroke="#2F2E34" VerticalAlignment="Top" Width="240"/>
+
+                    <!-- GetGames -->
+                    <Rectangle Fill="#2F2E34" HorizontalAlignment="Left" Height="47" Margin="2281,49,0,0" Stroke="#2F2E34" VerticalAlignment="Top" Width="240"/>
+
+                    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                    <!-- Steam -->
+                    <Button x:Name="buttonSteamItem1" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,95,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem1_Click"/>
+                    <Button x:Name="buttonSteamItem2" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,143,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem2_Click"/>
+                    <Button x:Name="buttonSteamItem3" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,191,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem3_Click"/>
+                    <Button x:Name="buttonSteamItem4" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,239,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem4_Click"/>
+                    <Button x:Name="buttonSteamItem5" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,287,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem5_Click"/>
+                    <Button x:Name="buttonSteamItem6" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,335,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem6_Click"/>
+                    <Button x:Name="buttonSteamItem7" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,383,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem7_Click"/>
+                    <Button x:Name="buttonSteamItem8" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,431,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem8_Click"/>
+                    <Button x:Name="buttonSteamItem9" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,479,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem9_Click"/>
+                    <Button x:Name="buttonSteamItem10" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="207,527,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonSteamItem10_Click"/>
+
+                    <!-- GamersGate -->
+                    <Button x:Name="buttonGamersGateItem1" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,95,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem1_Click"/>
+                    <Button x:Name="buttonGamersGateItem2" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,143,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem2_Click"/>
+                    <Button x:Name="buttonGamersGateItem3" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,191,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem3_Click"/>
+                    <Button x:Name="buttonGamersGateItem4" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,239,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem4_Click"/>
+                    <Button x:Name="buttonGamersGateItem5" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,287,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem5_Click"/>
+                    <Button x:Name="buttonGamersGateItem6" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,335,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem6_Click"/>
+                    <Button x:Name="buttonGamersGateItem7" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,383,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem7_Click"/>
+                    <Button x:Name="buttonGamersGateItem8" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,431,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem8_Click"/>
+                    <Button x:Name="buttonGamersGateItem9" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,479,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem9_Click"/>
+                    <Button x:Name="buttonGamersGateItem10" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="466,527,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGamersGateItem10_Click"/>
+
+                    <!-- GreenManGaming -->
+                    <Button x:Name="buttonGMGItem1" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,95,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem1_Click"/>
+                    <Button x:Name="buttonGMGItem2" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,143,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem2_Click"/>
+                    <Button x:Name="buttonGMGItem3" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,191,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem3_Click"/>
+                    <Button x:Name="buttonGMGItem4" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,239,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem4_Click"/>
+                    <Button x:Name="buttonGMGItem5" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,287,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem5_Click"/>
+                    <Button x:Name="buttonGMGItem6" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,335,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem6_Click"/>
+                    <Button x:Name="buttonGMGItem7" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,383,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem7_Click"/>
+                    <Button x:Name="buttonGMGItem8" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,431,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem8_Click"/>
+                    <Button x:Name="buttonGMGItem9" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,479,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem9_Click"/>
+                    <Button x:Name="buttonGMGItem10" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="725,527,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGMGItem10_Click"/>
+
+                    <!-- Amazon -->
+                    <Button x:Name="buttonAmazonItem1" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,95,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem1_Click"/>
+                    <Button x:Name="buttonAmazonItem2" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,143,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem2_Click"/>
+                    <Button x:Name="buttonAmazonItem3" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,191,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem3_Click"/>
+                    <Button x:Name="buttonAmazonItem4" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,239,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem4_Click"/>
+                    <Button x:Name="buttonAmazonItem5" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,287,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem5_Click"/>
+                    <Button x:Name="buttonAmazonItem6" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,335,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem6_Click"/>
+                    <Button x:Name="buttonAmazonItem7" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,383,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem7_Click"/>
+                    <Button x:Name="buttonAmazonItem8" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,431,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem8_Click"/>
+                    <Button x:Name="buttonAmazonItem9" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,479,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem9_Click"/>
+                    <Button x:Name="buttonAmazonItem10" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="984,527,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonAmazonItem10_Click"/>
+
+                    <!-- GameStop -->
+                    <Button x:Name="buttonGameStopItem1" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,95,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem1_Click"/>
+                    <Button x:Name="buttonGameStopItem2" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,143,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem2_Click"/>
+                    <Button x:Name="buttonGameStopItem3" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,191,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem3_Click"/>
+                    <Button x:Name="buttonGameStopItem4" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,239,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem4_Click"/>
+                    <Button x:Name="buttonGameStopItem5" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,287,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem5_Click"/>
+                    <Button x:Name="buttonGameStopItem6" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,335,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem6_Click"/>
+                    <Button x:Name="buttonGameStopItem7" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,383,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem7_Click"/>
+                    <Button x:Name="buttonGameStopItem8" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,431,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem8_Click"/>
+                    <Button x:Name="buttonGameStopItem9" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,479,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem9_Click"/>
+                    <Button x:Name="buttonGameStopItem10" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1243,527,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameStopItem10_Click"/>
+
+                    <!-- GameFly -->
+                    <Button x:Name="buttonGameFlyItem1" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,95,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem1_Click"/>
+                    <Button x:Name="buttonGameFlyItem2" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,143,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem2_Click"/>
+                    <Button x:Name="buttonGameFlyItem3" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,191,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem3_Click"/>
+                    <Button x:Name="buttonGameFlyItem4" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,239,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem4_Click"/>
+                    <Button x:Name="buttonGameFlyItem5" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,287,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem5_Click"/>
+                    <Button x:Name="buttonGameFlyItem6" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,335,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem6_Click"/>
+                    <Button x:Name="buttonGameFlyItem7" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,383,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem7_Click"/>
+                    <Button x:Name="buttonGameFlyItem8" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,431,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem8_Click"/>
+                    <Button x:Name="buttonGameFlyItem9" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,479,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem9_Click"/>
+                    <Button x:Name="buttonGameFlyItem10" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1502,527,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGameFlyItem10_Click"/>
+
+                    <!-- GOG -->
+                    <Button x:Name="buttonGOGItem1" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,95,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem1_Click"/>
+                    <Button x:Name="buttonGOGItem2" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,143,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem2_Click"/>
+                    <Button x:Name="buttonGOGItem3" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,191,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem3_Click"/>
+                    <Button x:Name="buttonGOGItem4" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,239,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem4_Click"/>
+                    <Button x:Name="buttonGOGItem5" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,287,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem5_Click"/>
+                    <Button x:Name="buttonGOGItem6" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,335,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem6_Click"/>
+                    <Button x:Name="buttonGOGItem7" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,383,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem7_Click"/>
+                    <Button x:Name="buttonGOGItem8" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,431,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem8_Click"/>
+                    <Button x:Name="buttonGOGItem9" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,479,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem9_Click"/>
+                    <Button x:Name="buttonGOGItem10" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="1761,527,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGOGItem10_Click"/>
+
+                    <!-- Origin -->
+                    <Button x:Name="buttonOriginItem1" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,95,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem1_Click"/>
+                    <Button x:Name="buttonOriginItem2" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,143,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem2_Click"/>
+                    <Button x:Name="buttonOriginItem3" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,191,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem3_Click"/>
+                    <Button x:Name="buttonOriginItem4" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,239,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem4_Click"/>
+                    <Button x:Name="buttonOriginItem5" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,287,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem5_Click"/>
+                    <Button x:Name="buttonOriginItem6" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,335,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem6_Click"/>
+                    <Button x:Name="buttonOriginItem7" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,383,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem7_Click"/>
+                    <Button x:Name="buttonOriginItem8" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,431,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem8_Click"/>
+                    <Button x:Name="buttonOriginItem9" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,479,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem9_Click"/>
+                    <Button x:Name="buttonOriginItem10" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2020,527,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonOriginItem10_Click"/>
+
+                    <!-- GetGames -->
+                    <Button x:Name="buttonGetGamesItem1" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,95,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem1_Click"/>
+                    <Button x:Name="buttonGetGamesItem2" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,143,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem2_Click"/>
+                    <Button x:Name="buttonGetGamesItem3" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,191,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem3_Click"/>
+                    <Button x:Name="buttonGetGamesItem4" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,239,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem4_Click"/>
+                    <Button x:Name="buttonGetGamesItem5" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,287,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem5_Click"/>
+                    <Button x:Name="buttonGetGamesItem6" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,335,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem6_Click"/>
+                    <Button x:Name="buttonGetGamesItem7" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,383,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem7_Click"/>
+                    <Button x:Name="buttonGetGamesItem8" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,431,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem8_Click"/>
+                    <Button x:Name="buttonGetGamesItem9" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,479,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem9_Click"/>
+                    <Button x:Name="buttonGetGamesItem10" Content="Loading..." FontSize="13" VerticalAlignment="Top" Margin="2278,527,0,0" RenderTransformOrigin="0,0" Height="52" Width="245" BorderThickness="0" Background="#FF37A8E8" HorizontalContentAlignment="Left" Click="buttonGetGamesItem10_Click"/>
+
+                    <!-- Images -->
+
+                    <Image HorizontalAlignment="Left" Height="47" Margin="254,49,0,0" VerticalAlignment="Top" Width="150" Source="Assets/Steam (White).png"/>
+                    <Image HorizontalAlignment="Left" Height="49" Margin="478,59,0,0" VerticalAlignment="Top" Width="222" Source="Assets/GamersGate (White).png"/>
+                    <Image HorizontalAlignment="Left" Height="51" Margin="740,60,0,0" VerticalAlignment="Top" Width="219" Source="Assets/GreenManGaming (White).png"/>
+                    <Image HorizontalAlignment="Left" Height="31" Margin="1001,59,0,0" VerticalAlignment="Top" Width="226" Source="Assets/Amazon (White).png"/>
+                    <Image HorizontalAlignment="Left" Height="35" Margin="1281,59,0,0" VerticalAlignment="Top" Width="167" Source="Assets/GameStop (White).png"/>
+                    <Image HorizontalAlignment="Left" Height="35" Margin="1519,59,0,0" VerticalAlignment="Top" Width="211" Source="Assets/GameFly (White).png"/>
+                    <Image HorizontalAlignment="Left" Height="35" Margin="1801,62,0,0" VerticalAlignment="Top" Width="159" Source="Assets/GOG (White).png"/>
+                    <Image HorizontalAlignment="Left" Height="42" Margin="2077,50,0,0" VerticalAlignment="Top" Width="131" Source="Assets/Origin (White).png"/>
+                    <Image HorizontalAlignment="Left" Height="42" Margin="2353,50,0,0" VerticalAlignment="Top" Width="131" Source="Assets/GetGames (White).png"/>
+
+                    <!-- Buttons -->
+
+                    <!-- Click="buttonBrowsePage_Click" -->
+                    <Button x:Name="buttonSteam" Content="Browse All Steam Deals" HorizontalAlignment="Left" Height="45" Margin="207,575,0,0" VerticalAlignment="Top" Width="246" Background="#FFFF7E39" BorderBrush="#FFFF7E39" Click="buttonBrowseSteam_Click" />
+                    <Button x:Name="buttonGamersGate" Content="Browse All GamersGate Deals" HorizontalAlignment="Left" Height="45" Margin="466,575,0,0" VerticalAlignment="Top" Width="246" Background="#FFFF7E39" BorderBrush="#FFFF7E39" Click="buttonBrowseGamersGate_Click" />
+                    <Button x:Name="buttonGMG" Content="Browse All GMG Deals" HorizontalAlignment="Left" Height="45" Margin="725,575,0,0" VerticalAlignment="Top" Width="246" Background="#FFFF7E39" BorderBrush="#FFFF7E39" Click="buttonBrowseGMG_Click" />
+                    <Button x:Name="buttonAmazon" Content="Browse All Amazon Deals" HorizontalAlignment="Left" Height="45" Margin="984,575,0,0" VerticalAlignment="Top" Width="246" Background="#FFFF7E39" BorderBrush="#FFFF7E39" Click="buttonBrowseAmazon_Click" />
+                    <Button x:Name="buttonGameStop" Content="Browse All GameStop Deals" HorizontalAlignment="Left" Height="45" Margin="1243,575,0,0" VerticalAlignment="Top" Width="246" Background="#FFFF7E39" BorderBrush="#FFFF7E39" Click="buttonBrowseGameStop_Click" />
+                    <Button x:Name="buttonGameFly" Content="Browse All GameFly Deals" HorizontalAlignment="Left" Height="45" Margin="1503,575,0,0" VerticalAlignment="Top" Width="246" Background="#FFFF7E39" BorderBrush="#FFFF7E39" Click="buttonBrowseGameFly_Click" />
+                    <Button x:Name="buttonGOG" Content="Browse All GOG Deals" HorizontalAlignment="Left" Height="45" Margin="1761,575,0,0" VerticalAlignment="Top" Width="246" Background="#FFFF7E39" BorderBrush="#FFFF7E39" Click="buttonBrowseGOG_Click" />
+                    <Button x:Name="buttonOrigin" Content="Browse All Origin Deals" HorizontalAlignment="Left" Height="45" Margin="2020,575,0,0" VerticalAlignment="Top" Width="246" Background="#FFFF7E39" BorderBrush="#FFFF7E39" Click="buttonBrowseOrigin_Click" />
+                    <Button x:Name="buttonGetGames" Content="Browse All GetGames Deals" HorizontalAlignment="Left" Height="45" Margin="2278,575,0,0" VerticalAlignment="Top" Width="246" Background="#FFFF7E39" BorderBrush="#FFFF7E39" Click="buttonBrowseGetGames_Click" />
+
+                    <!-- TextBlock Buttons -->
+
+                    <!-- Click="buttonBrowsePage_Click"  -->
+                    <Button x:Name="buttonBrowse" Content="Browse" FontSize="20" VerticalAlignment="Top" Margin="28,50,0,0" RenderTransformOrigin="0.228,0.588" Height="52" Width="100" BorderThickness="1,0,0,0" Background="Transparent" Click="buttonBrowse_Click"/>
+                    <Button x:Name="buttonSearch" Content="Search" FontSize="20"  VerticalAlignment="Top" Margin="28,140,0,0" RenderTransformOrigin="0.228,0.588" Height="52" Width="100"  BorderThickness="1,0,0,0" Background="Transparent" />
+                    <Button x:Name="buttonAbout" Content="About" FontSize="20" VerticalAlignment="Top" Margin="28,230,0,0" RenderTransformOrigin="0.228,0.588" Height="52" Width="100" BorderThickness="1,0,0,0" Background="Transparent" />
+
+                </Grid>
+            </Viewbox>
+        </ScrollViewer>
+
+        <Image x:Name="imageMotto" HorizontalAlignment="Left" Height="135" Margin="25,15,0,0" VerticalAlignment="Top" Width="522" Source="Assets/CheapShark Motto.png" Grid.RowSpan="2"/>
+        <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" 
+        					IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Top" Margin="10,50,1690,0" RenderTransformOrigin="0.228,0.588" Opacity="0"/>
+    </Grid>
+</Page>
